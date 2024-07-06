@@ -24,3 +24,4 @@ These are just some of the basics and fundamentals of React. To dive deeper into
 Remember, React is a powerful and flexible library that enables developers to build dynamic and interactive user interfaces. With practice and exploration, you can leverage React's capabilities to create robust and efficient web applications.
 
 
+Note that we can only work with a single fragment in our App.jsx file
