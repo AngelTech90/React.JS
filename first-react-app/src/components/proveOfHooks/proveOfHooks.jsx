@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
+import './style.module.css';
 
-function hook(){
+
+function ProveHook(){
 
     let random = 0;
 
-    const [name, setName] = useState();
+    const [name, setName] = useState('Name');
 
 
     const listOfNames = [
@@ -18,9 +20,7 @@ function hook(){
     ]
 
     function randomPostion(){
-
         Math.random(1, listOfNames.length)
-
         return random
     }
         
@@ -30,8 +30,10 @@ function hook(){
 
     return(
 
-        <h1 onClick = {changeName()} className = 'semibold font-[3rem]'>{name}</h1>
+        <h1 onClick = {changeName()} className = 'semibold font-[3rem]'>{name}</h1>    
 
     )
 
 }
+
+export default ProveHook

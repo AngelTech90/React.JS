@@ -1,0 +1,9 @@
+:root{
+
+    --mainContainerColor: #41f110;
+
+}
+
+.mainCOntainer{
+    background-color: var(--mainContainerColor);
+}
