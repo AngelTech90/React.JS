@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 
 function CardOfGallery(){
     
+    const idOfCard = 0;
+
     //*Hook for name:
     const [cardName, setName] = useState('Name');
 
@@ -14,12 +16,15 @@ function CardOfGallery(){
     //*Hook for ID:
     const [id, setId] = useState(100000000);
 
-    function setAllHooks(){
-        
+    const setAllHooks = (newName, newAge, newStatus, newId) => {
+        setName(newName);
+        setAge(newAge);
+        setStatus(newStatus);
+        setId(newId);
     }
 
     return(
-        <div className = 'card'>
+        <div className = 'card' id = {idOfCard}>
             <h2 className = 'cardName'>{cardName}</h2>
             <ul className = 'cardImage'></ul>
             <p className = 'informationTitle'>Information about students<strong></strong></p>
