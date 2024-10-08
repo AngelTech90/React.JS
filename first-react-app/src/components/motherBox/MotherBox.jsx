@@ -1,3 +1,4 @@
+import './motherBox.module.css' 
 
 function MotherBox(){
 

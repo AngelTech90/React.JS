@@ -11,20 +11,18 @@ function CardOfGallery(){
     const [age, setAge] = useState(0);
 
     //*Hook for state:
-    const [status, setStatus] = useState('false');
+    const [status, setStatus] = useState(false);
     
     //*Hook for ID:
     const [id, setId] = useState(100000000);
 
-    const setAllHooks = (newName, newAge, newStatus, newId) => {
-        setName(newName);
-        setAge(newAge);
-        setStatus(newStatus);
-        setId(newId);
-    }
+    setAge(12);
+    setId(29398018909);
+    setName('Angel Molina');
+    setStatus(true);
 
     return(
-        <div className = 'card' id = {idOfCard}>
+        <div className = 'card bg-black' id = {idOfCard}>
             <h2 className = 'cardName'>{cardName}</h2>
             <ul className = 'cardImage'></ul>
             <p className = 'informationTitle'>Information about students<strong></strong></p>
