@@ -48,4 +48,18 @@ Is a react hook that let us create a stateful variable, it give us the door (set
 
 so a react hook is more like a <stong>portal</strong> that let us <strong>set</strong> the information inside our components and let us create adaptable components that will be asociated a stateful variable.
 
+## What is useEffect?
+useEffect is a built-in React hook that allows you to perform side effects in your functional components. Side effects can include operations such as data fetching, subscriptions, or manually changing the DOM. Essentially, useEffect helps you manage the lifecycle of your components by allowing you to run code after the component has rendered.
+
+## Key Features of useEffect
+
+## Lifecycle Management: 
+useEffect combines the functionalities of several lifecycle methods from class components, such as componentDidMount, componentDidUpdate, and componentWillUnmount. This means you can handle component lifecycle events in a more streamlined way within functional components.
+
+## Dependency Array: 
+You can control when the effect runs by providing a dependency array as the second argument to useEffect. If you pass an empty array ([]), the effect will only run once after the initial render, similar to componentDidMount. If you include variables in the array, the effect will run whenever those variables change.
+
+## Cleanup Function: 
+useEffect can return a cleanup function that React will call when the component unmounts or before the effect runs again. This is useful for cleaning up subscriptions or timers to prevent memory leaks.
+
 all stopped on 1:58:08
